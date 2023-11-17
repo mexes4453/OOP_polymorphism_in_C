@@ -1,3 +1,12 @@
+/*
+ * PURPOSE
+ * -------
+ * Polymorphism is the ability to substitute objects of matching interface
+ * for one another at run-time. 
+ * Date : 18.11.2023
+ * -----
+ */
+
 #include "Shape.h"
 #include "Circle.h"
 #include "Rectangle.h"
