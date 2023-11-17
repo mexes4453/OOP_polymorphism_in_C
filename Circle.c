@@ -15,8 +15,10 @@ void    Circle_ctor(Circle * const me, int x, int y, int r)
 
 void    Circle_draw(Circle const * const me)
 {
-    printf("Calling ... Circle -> draw, @%d, %d\n", ((Shape *)me)->x,
-                                                    ((Shape *)me)->y);
+    printf("Calling ... Circle -> draw( r=%d ), @%d, %d\n",
+    me->radius,
+    ((Shape *)me)->x,
+    ((Shape *)me)->y);
 }
 
 int     Circle_area(Circle const * const me)

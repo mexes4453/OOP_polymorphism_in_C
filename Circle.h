@@ -5,7 +5,7 @@
 #include "Shape.h"
 
 typedef struct {
-    Shape super;
+    Shape super;   /* Circle class inherits from Shape class */
     int radius;
 } Circle;
 

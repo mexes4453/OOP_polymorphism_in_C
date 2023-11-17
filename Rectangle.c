@@ -18,11 +18,19 @@ void    Rectangle_ctor(Rectangle * const me, int x, int y, int h, int w)
     me->height = h;
     me->width = w;
 }
+
+
+
 void    Rectangle_draw(Rectangle const * const me)
 {
-    printf("Calling ... Rectangle -> draw, @%d, %d\n", ((Shape *)me)->x,
-                                                       ((Shape *)me)->y);
+    printf("Calling ... Rectangle -> draw( h=%d, w=%d ), @%d, %d\n",
+    me->height, me->width,
+    ((Shape *)me)->x,
+    ((Shape *)me)->y);
 }
+
+
+
 int     Rectangle_area(Rectangle const * const me)
 {
     int area = me->height * me->width;

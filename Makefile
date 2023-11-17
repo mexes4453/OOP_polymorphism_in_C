@@ -1,5 +1,5 @@
 
-SRCS:= main.c  Shape.c Circle.c Rectangle.c #Triangle.c
+SRCS:= main.c  Shape.c Circle.c Rectangle.c Triangle.c
 
 OBJS:= $(SRCS:.c=.o)
 MSG = 
