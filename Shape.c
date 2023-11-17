@@ -1,9 +1,13 @@
 #include "Shape.h"
 
 
-
 void    Shape_ctor(Shape * const me, int x, int y)
 {
+    static const struct vShapeTable vtable = {
+        &Shape_draw,
+        &Shape_area
+    };
+    me->vptr = &vtable;
     me->x = x;
     me->y = y;
 }

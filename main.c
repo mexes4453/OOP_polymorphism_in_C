@@ -22,8 +22,12 @@ int main(void)
 
     while( all_shapes[idx] != (Shape *)0 )
     {
+        /*
         Shape_draw(all_shapes[idx]);
         Shape_area(all_shapes[idx]);
+        */
+        VC_SHAPE_AREA(all_shapes[idx]);
+        VC_SHAPE_DRAW(all_shapes[idx]);
         idx++;
     }
 

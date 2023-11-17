@@ -4,7 +4,12 @@
 
 void    Circle_ctor(Circle * const me, int x, int y, int r)
 {
+    static const struct vShapeTable vtable = {
+        (void (*)( Shape const * const))&Circle_draw,
+        (int (*)( Shape const * const))&Circle_area,
+    };
     Shape_ctor(&(me->super), x, y);
+    me->super.vptr = &vtable;
     me->radius = r;
 }
 
